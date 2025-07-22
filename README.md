@@ -1,52 +1,35 @@
-# 🚦 Traffic Signboard Instructor
+# TRAFFIC SIGNBOARD INSTRUCTOR
 
-The **Traffic Signboard Instructor** is an AI-powered web application built using Django that recognizes and classifies Indian traffic signs from uploaded images. The system is designed to assist learners, driving students, and general users in understanding traffic signage effectively through a simple and intuitive interface.
+Traffic Signboard Instructor is an intelligent web application developed using Django that enables users to upload images of traffic signs and receive accurate classifications. This system is designed to assist learners preparing for driving tests, educators conducting road safety sessions, and anyone looking to better understand traffic signage.
 
----
-
-## 📌 Table of Contents
-
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Screenshots](#screenshots)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+The platform not only identifies traffic signs from uploaded images but also displays their official meaning, helping users to learn about them visually and interactively. It comes with user authentication, an admin dashboard, and simple navigation—all aimed at delivering an educational yet seamless experience.
 
 ---
 
-## ✅ Features
+## FEATURES
 
-- 🔍 Upload and classify Indian traffic signs using trained ML models.
-- 👥 User authentication system with login/signup/logout functionality.
-- 🧑‍💼 Admin dashboard to manage users and monitor system metrics.
-- 🖼️ Media upload handling and real-time predictions.
-- 📚 Information popup for each classified sign explaining its meaning.
-- 🔒 Email-based password recovery using Gmail SMTP.
-- 📊 Visual stats and logs for admin-level insights.
+- **Image Upload and Prediction:** Users can upload traffic sign images, and the system will classify them using a trained model.
+- **Meaning Display:** Along with the predicted class, the description and official meaning of the sign is presented.
+- **User Authentication:** Signup, login, logout, and password reset functionality using secure email-based authentication.
+- **Admin Dashboard:** A backend interface for administrators to view statistics, monitor user activity, and manage image predictions.
+- **Email Notification:** Password reset and account-related notifications are sent via Gmail using Django's email configuration.
+- **Database Storage:** Image data, predictions, and user information are stored in an SQLite database for simplicity and portability.
 
 ---
 
-## 💻 Tech Stack
+## TECHNOLOGIES USED
 
-- **Backend:** Python, Django
+- **Backend:** Python 3, Django Framework
 - **Frontend:** HTML5, CSS3, Bootstrap
-- **Database:** SQLite3 (default for development)
-- **ML Framework (optional):** TensorFlow/Keras or OpenCV (if used for sign recognition)
-- **Authentication:** Django built-in auth system
-- **Deployment:** GitHub / Netlify (for frontend-only), or Heroku/Vercel for full stack
+- **Database:** SQLite3
+- **Image Handling:** Python Imaging Library (PIL), optional integration with OpenCV or TensorFlow for image classification
+- **Email:** SMTP configuration with Gmail
+- **Development Tools:** Git, VS Code, Django Admin Panel
 
 ---
 
-## ⚙️ Installation
+## INSTALLATION INSTRUCTIONS
 
-### Step 1: Clone the Repository
+### STEP 1: Clone the Repository
+First, download the source code to your local machine.
 
-```bash
-git clone https://github.com/madishettysoumith/Traffic_Signboard_Instructor_Final.git
-cd Traffic_Signboard_Instructor_Final
